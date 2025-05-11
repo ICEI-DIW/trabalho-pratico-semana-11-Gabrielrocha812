@@ -1,0 +1,65 @@
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: #bdbecb;
+}
+
+.filme img {
+  pointer-events: none;
+}
+
+.icone {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icone:hover {
+  transform: scale(1.2);
+}
+
+.icone.ativo {
+  color: red;
+}
+
+.icone.ativo.estrela {
+  color: gold;
+}
+
+
+.destaque {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: end;
+  color: white;
+}
+
+.destaque-info {
+  z-index: 2;
+}
+
+.login-form {
+  display: none;
+}
+
+.filme {
+  transition: transform 0.3s ease;
+}
+
+.filme:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}

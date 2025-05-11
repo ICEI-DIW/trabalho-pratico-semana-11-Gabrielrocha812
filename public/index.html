@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeuFlix - v3.0</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    
+
+<body class="bg-black text-white">
+
+  <header class="bg-black text-white py-3 px-4 d-flex flex-wrap justify-content-between align-items-center position-relative z-3">
+    <a href="#" class="text-danger fw-bold fs-2 text-uppercase text-decoration-none">MeuFlix</a>
+
+    <div class="d-flex flex-wrap align-items-center gap-3">
+      <nav>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#" class="text-white text-decoration-none">Home</a>
+          <a href="#" class="text-white text-decoration-none">Filmes</a>
+          <a href="#" class="text-white text-decoration-none">Configurações</a>
+          <a href="#" id="loginLink" class="text-white text-decoration-none">Login</a>
+        </div>
+      </nav>
+
+      <div class="position-relative">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="position-absolute top-50 start-0 translate-middle-y ms-2 search-icon">
+          <g>
+            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+          </g>
+        </svg>
+        <input id="query" class="form-control ps-5 bg-dark text-white border-0 rounded-3" type="search" placeholder="Buscar..." name="searchbar">
+      </div>
+    </div>
+
+    <div class="login-form position-absolute top-100 end-0 bg-white text-black border p-3 shadow" id="loginForm">
+      <form class="d-flex flex-column">
+        <label for="username" class="form-label">Usuário:</label>
+        <input type="text" id="username" name="username" class="form-control mb-2">
+        <label for="password" class="form-label">Senha:</label>
+        <input type="password" id="password" name="password" class="form-control mb-2">
+        <button type="submit" class="btn btn-dark">Entrar</button>
+      </form>
+    </div>
+  </header>
+
+  <div class="destaque" style="background-image: url('https://wallpapercave.com/wp/wp2613062.jpg');">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0, 0, 0, 0.3); z-index: 1;"></div>
+    <div class="destaque-info position-relative z-2 bg-black bg-opacity-50 p-4 rounded-3 m-4">
+      <h1 class="fs-2">Os Vingadores - The Avengers</h1>
+      <p class="fs-5">Um filme de ação e aventura da Marvel que reúne os heróis Homem de Ferro, Capitão América, Thor, Hulk, Viúva Negra e Gavião Arqueiro para enfrentar Loki, que ameaça a Terra com um exército alienígena.</p>
+      <div class="botoes mt-3">
+        <button class="btn btn-danger me-2">▶ Play</button>
+        <button class="btn btn-light text-dark">🎬 Trailer</button>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content filmes py-5">
+    <div class="container">
+      <h2 class="text-start">Destaques Netflix</h2>
+      <div class="position-relative">
+        <button class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-3" onclick="scrollEsquerda()">&#10094;</button>
+        <div class="d-flex overflow-auto gap-3 py-4 px-2" id="carrossel"></div>
+        <button class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-3" onclick="scrollDireita()">&#10095;</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2025 MeuFlix. Todos os direitos reservados.</p>
+      <p>
+        <a href="#" class="text-danger text-decoration-none">Termos de Uso</a> |
+        <a href="#" class="text-danger text-decoration-none">Política de Privacidade</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("loginLink").addEventListener("click", function (event) {
+      event.preventDefault();
+      let loginForm = document.getElementById("loginForm");
+      loginForm.style.display = loginForm.style.display === "block" ? "none" : "block";
+    });
+
+    function scrollDireita() {
+      document.getElementById('carrossel').scrollBy({ left: 300, behavior: 'smooth' });
+    }
+
+    function scrollEsquerda() {
+      document.getElementById('carrossel').scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function toggleCoracao(elemento) {
+      elemento.classList.toggle("ativo");
+    }
+
+    function toggleEstrela(elemento) {
+      elemento.classList.toggle("ativo");
+    }
+  </script>
+  <script src="./assets/scripts/script.js"></script>
 </body>
+
 </html>
+    
