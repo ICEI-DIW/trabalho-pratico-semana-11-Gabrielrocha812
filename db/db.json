@@ -1,18 +1,104 @@
 {
-  "usuarios": [
+  "filmes": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Capitão América: O Primeiro Vingador",
+      "descricao": "A origem do herói patriótico da Marvel durante a Segunda Guerra Mundial.",
+      "conteudo": "Durante a Segunda Guerra Mundial, Steve Rogers, um jovem corajoso, participa de um experimento secreto que o transforma no super-soldado Capitão América. Ele lidera a luta contra a HIDRA, organização liderada pelo vilão Caveira Vermelha, usando seu escudo e senso de justiça para proteger o mundo.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "22-07-2011",
+      "imagem": "https://www.themoviedb.org/t/p/original/f976JQnjMhCTa1yLXz7UH1pV4DG.jpg"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "Capitã Marvel",
+      "descricao": "A jornada de uma heroína para descobrir sua verdadeira identidade e salvar a galáxia.",
+      "conteudo": "Carol Danvers, uma ex-piloto da Força Aérea, se torna uma das heroínas mais poderosas do universo quando a Terra é pega no meio de um conflito entre duas raças alienígenas. Ao longo de sua jornada, ela descobre segredos sobre seu passado e aprende a dominar seus poderes para proteger os inocentes.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "07-03-2019",
+      "imagem": "https://br.web.img2.acsta.net/pictures/19/02/04/18/35/1468867.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "O Incrível Hulk",
+      "descricao": "Bruce Banner busca a cura para sua condição enquanto foge do governo.",
+      "conteudo": "Após um experimento que deu errado, o cientista Bruce Banner se transforma em uma criatura incontrolável quando está com raiva: o Hulk. Enquanto procura uma cura, ele precisa escapar das forças militares e enfrentar um novo inimigo, o Abominável.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "13-06-2008",
+      "imagem": "https://www.cafecomfilme.com.br/media/k2/items/cache/99cd0456dbb566f78b7b8527fdd14c15_XL.jpg?t=20221202_164544"
+    },
+    {
+      "id": 4,
+      "titulo": "Homem de Ferro",
+      "descricao": "A origem do bilionário gênio Tony Stark como o herói de armadura.",
+      "conteudo": "Tony Stark, um bilionário e gênio da tecnologia, é sequestrado e forçado a construir uma arma. Em vez disso, ele cria uma armadura poderosa para escapar e, ao retornar, aprimora o traje para combater ameaças como o vilão Obadiah Stane.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "02-05-2008",
+      "imagem": "https://th.bing.com/th/id/OIP.AOfH2UVlZX-J_TCVedcvqQHaLH?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 5,
+      "titulo": "Homem de Ferro 2",
+      "descricao": "Tony Stark enfrenta novos inimigos e pressões do governo.",
+      "conteudo": "Enquanto o governo exige acesso à tecnologia do Homem de Ferro, Tony Stark lida com a deterioração de sua saúde e a ameaça de Ivan Vanko, um inimigo que busca vingança usando tecnologia semelhante à sua.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "07-05-2010",
+      "imagem": "https://th.bing.com/th/id/OIP.gc2vH1KYhAoLWlDGqyZANwHaLH?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 6,
+      "titulo": "Thor",
+      "descricao": "O deus do trovão aprende o valor da humildade na Terra.",
+      "conteudo": "Banido de Asgard por seu pai Odin, o arrogante Thor é enviado à Terra como castigo. Lá, ele aprende lições de humildade, enquanto seu irmão Loki trama para tomar o trono. Thor precisa provar seu valor para recuperar seus poderes.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "06-05-2011",
+      "imagem": "https://th.bing.com/th/id/OIP.9RmXfuotqI2-FTVwSDyhnwHaKm?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 7,
+      "titulo": "Os Vingadores",
+      "descricao": "Os heróis da Marvel se unem para salvar o mundo de uma invasão alienígena.",
+      "conteudo": "Liderados por Nick Fury, Capitão América, Homem de Ferro, Thor, Hulk, Viúva Negra e Gavião Arqueiro formam os Vingadores para enfrentar Loki, que busca dominar a Terra com a ajuda de um exército alienígena.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "04-05-2012",
+      "imagem": "https://www.themoviedb.org/t/p/original/j9hwS307Zlc5mQTbAnwV75vXG0H.jpg"
+    },
+    {
+      "id": 8,
+      "titulo": "Homem de Ferro 3",
+      "descricao": "Tony Stark enfrenta seu maior desafio após os eventos dos Vingadores.",
+      "conteudo": "Após a batalha de Nova York, Tony Stark sofre com traumas e ataques de ansiedade. Quando um novo inimigo conhecido como o Mandarim ameaça os Estados Unidos, ele precisa usar sua inteligência para proteger os que ama, mesmo sem sua armadura.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "03-05-2013",
+      "imagem": "https://4.bp.blogspot.com/-TcWRvNiFJRQ/UXotBBn-XhI/AAAAAAAAO8g/O4FBRFOkieg/s1600/HDF+3a.jpg"
+    },
+    {
+      "id": 9,
+      "titulo": "Thor: O Mundo Sombrio",
+      "descricao": "Thor precisa impedir que uma força ancestral mergulhe o universo nas trevas.",
+      "conteudo": "Thor se une a seus aliados e a Loki para enfrentar Malekith, um elfo negro que busca usar o Éter — uma força destrutiva — para cobrir o universo em escuridão durante a Convergência dos mundos.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "08-11-2013",
+      "imagem": "https://th.bing.com/th/id/OIP.-g_HPQQ3HjW6jYn4Llrt8wHaKl?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 10,
+      "titulo": "Capitão América: O Soldado Invernal",
+      "descricao": "Steve Rogers descobre uma conspiração dentro da S.H.I.E.L.D.",
+      "conteudo": "Agora trabalhando para a S.H.I.E.L.D., Capitão América investiga uma conspiração que ameaça a liberdade global. Com a ajuda da Viúva Negra e do Falcão, ele confronta um antigo amigo transformado em inimigo: o Soldado Invernal.",
+      "categoria": "Filmes",
+      "autor": "Marvel Studios",
+      "data": "04-04-2014",
+      "imagem": "https://th.bing.com/th/id/OIP.SR01HlsrPxZ6G4XRSNgGNAAAAA?rs=1&pid=ImgDetMain"
     }
   ]
 }
